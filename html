@@ -1,0 +1,58 @@
+<html>
+
+<head>
+	<title>Home Page</title>
+	<link title="light" type="text/css" rel="stylesheet" media="all" href="theme/light.css" id="theme" />
+	<link title="dark" type="text/css" rel="alternate stylesheet" media="all" href="theme/dark.css" id="theme" />
+	<link title="med" type="text/css" rel="alternate stylesheet" media="all" href="theme/med.css" id="theme" />
+	<!--Calls style sheet-->
+	<link rel="icon" href="icon.png">
+</head>
+
+<body>
+	<div id = "top">
+		<div id = "block" style= "margin-left:10px; width:50px;">
+			<img src = "icon.png" alt = "icn" width = "50px" height = "50px"/>
+		</div>
+		<!--Ends icon-->
+		<div id = "block" style = "width: 450px;">
+			<form action="input.html">
+				<input type="text" id = "usrnm" placeholder = "Username" style = "margin-top:10px; margin-left:100px;"/>
+				<input type="password" id = "pswrd" placeholder = "Password"/>
+				<button type="submit" value="Submit" style = "height:20px;">Login</button>
+			</form>
+		</div>
+		<!--Ends Login-->
+	</div>
+	<!--Ends top divider-->
+	<div id = "mid">
+		<div id = "signup">
+			<h1 style = "margin-left:77px;">Sign Up</h1>
+			<form action="input.html">
+				<input style = "width:147px;" type="text" name = "first" placeholder = "First name"/>
+				<input style = "width:147px;" type="text" name = "last" placeholder = "Last name"/>
+				<input style = "width:300px; margin-top: 4px;" type="text" name = "nUsrnm" placeholder = "Create Username"/>
+				<input style = "width:300px; margin-top: 4px;" type="password" name = "nPswrd" placeholder = "Create Password"/>
+				<input style = "width:300px; margin-top: 4px;" type="password" name = "n2Pswrd" placeholder = "Retype Password"/>
+				<input style = "width:300px; margin-top: 4px;" type="text" name = "email" placeholder = "Email"/>
+				<input style = "width:300px; margin-top: 4px;" type="text" name = "cPath" placeholder = "Career Path"/>
+				Date of Birth
+				<input type="number" name="month" min="1" max="12" placeholder = "Month" style="margin-left:13px; margin-top:4px;"/>
+				<input type="number" name="day" min="1" max="31" placeholder = "Day" style="margin-left:3px;"/>
+				<input type="number" name="year" min="1930" max="2016" placeholder = "Year" style="margin-left:3px;"/>
+				<input type="radio" name="gender" value="male" style="margin-left:30px; margin-top:8px;"> Male
+				<input type="radio" name="gender" value="female"> Female
+				<input type="radio" name="gender" value="other">Other
+				<button style = "margin-left: 112px; margin-top: 20px; width:70px; height:30px;" type="submit" value="Submit">Register</button>
+			</form>
+		</div>	
+		<form>
+			<input type="submit" onclick="switch_style('med');return false;" name="theme" value="Medium Theme" id="med">
+			<input type="submit" onclick="switch_style('dark');return false;" name="theme" value="Dark Theme" id="dark">
+		</form>
+		<!--Ends signUp divider-->
+	</div>
+	<!--Ends mid divider-->
+</body>
+
+</html>
